@@ -1,0 +1,29 @@
+extends layout
+
+block content
+
+  include cart.jade
+
+  #container
+    .wrapper
+       ul.list-item
+        each products, index in json.products
+          li.item
+            figure
+              img(src='images/#{products.id}.png', alt='', title='')
+            .title
+              p #{products.title}
+            .price
+              .price-full
+                small #{products.currencyFormat}
+                #{products.price}
+              .price-installment
+                | ou 
+                span.installment-number  #{products.installments}
+                span.currency  #{products.currencyFormat}
+                - number = (products.price / products.installments ).toFixed(2)
+                #{number}
+
+
+ 
+

@@ -1,0 +1,119 @@
+body {
+  padding: 50px;
+  font: 14px 'Open Sans', sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+li {
+  list-style: none; }
+
+.wrapper {
+  max-width: 978px;
+  margin: 0 auto; }
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.item {
+  width: 33%; }
+  .item:hover {
+    background: rgba(0, 0, 0, 0.075);
+    cursor: pointer; }
+  .item figure {
+    text-align: center; }
+  .item .title {
+    color: #313135;
+    font: 400 14px Open Sans;
+    margin: 9px 0 28px 0;
+    text-align: center; }
+    .item .title:after {
+      content: '';
+      display: block;
+      background: #ffd600;
+      height: 2px;
+      width: 10px;
+      text-align: center;
+      margin: 0 auto; }
+  .item .price {
+    text-align: center; }
+    .item .price .price-full {
+      color: #313135;
+      font: 700 39.6px / 16px Open Sans; }
+      .item .price .price-full small {
+        color: #313135;
+        font: 400 10px / 16px Open Sans; }
+    .item .price .price-installment {
+      color: #999999;
+      font: 600 14px Open Sans; }
+
+.cart {
+  width: 550px;
+  background-color: #202025;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  padding: 0 20px; }
+  .cart .top {
+    text-align: center;
+    padding: 29px 0px; }
+    .cart .top .title {
+      font-weight: 700;
+      font-size: 24px; }
+  .cart .added-itens {
+    margin: 0 0 32px 0;
+    padding: 0; }
+    .cart .added-itens .item {
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      width: 100%;
+      min-height: 104px;
+      padding: 10px 0; }
+      .cart .added-itens .item .item-data {
+        width: 80%;
+        float: left; }
+        .cart .added-itens .item .item-data .image {
+          float: left; }
+        .cart .added-itens .item .item-data h3 {
+          color: #ffffff;
+          font: 600 14px Open Sans; }
+        .cart .added-itens .item .item-data span {
+          color: #999999;
+          font: 300 11.99px Open Sans;
+          display: block; }
+      .cart .added-itens .item .item-actions {
+        width: 20%;
+        float: right; }
+        .cart .added-itens .item .item-actions .remove {
+          background: url(../images/remove.png);
+          width: 14px;
+          height: 14px;
+          display: block;
+          float: right;
+          margin: 20px; }
+  .cart .cart-value p {
+    color: rgba(255, 255, 255, 0.4);
+    font: 400 14px Open Sans;
+    text-transform: uppercase;
+    float: left;
+    margin: 0; }
+  .cart .cart-value .price {
+    float: right;
+    text-align: right;
+    color: #dfbd00;
+    font: 400 24px Open Sans; }
+    .cart .cart-value .price .full-price {
+      display: block; }
+    .cart .cart-value .price .installment-price {
+      display: block;
+      color: rgba(255, 255, 255, 0.2);
+      font: 400 11.99px Open Sans; }
+  .cart .buy {
+    display: block;
+    clear: both; }
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
